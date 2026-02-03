@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스기모토 쇼타 - 나무위키</title>
+    <style>
+        body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.6; color: #373a3c; margin: 20px; background-color: #fff; }
+        .wiki-wrapper { max-width: 1000px; margin: 0 auto; position: relative; }
+        .wiki-title { border-bottom: 2px solid #373a3c; margin-bottom: 15px; padding-bottom: 5px; }
+        .wiki-title h1 { font-size: 2.2rem; margin: 0; display: inline-block; }
+        .wiki-title .edit-btn { float: right; font-size: 0.9rem; color: #0275d8; cursor: pointer; text-decoration: none; margin-top: 15px; }
+        
+        /* 인포박스 */
+        .infobox { float: right; width: 320px; border: 1px solid #2da44e; margin-left: 20px; margin-bottom: 20px; background-color: #fff; }
+        .infobox-name { background-color: #2da44e; color: white; text-align: center; padding: 10px; font-weight: bold; font-size: 1.1rem; }
+        .infobox-subname { background-color: #444; color: white; text-align: center; padding: 5px; font-size: 0.85rem; }
+        .infobox-image-wrap { width: 100%; border-bottom: 1px solid #ccc; }
+        .infobox-image { width: 100%; display: block; }
+        .infobox-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        .infobox-table th { width: 35%; background-color: #f2f2f2; border: 1px solid #ccc; padding: 7px; text-align: center; }
+        .infobox-table td { border: 1px solid #ccc; padding: 7px; text-align: left; }
+        
+        /* 목차 */
+        .toc { border: 1px solid #ccc; display: table; padding: 15px; background: #f9f9f9; margin: 20px 0; min-width: 280px; }
+        .toc-title { text-align: center; font-weight: bold; font-size: 1.1rem; margin-bottom: 10px; }
+        .toc ul { list-style: none; padding-left: 0; margin: 0; }
+        .toc ul ul { padding-left: 20px; margin-top: 5px; }
+        .toc a { text-decoration: none; color: #0275d8; }
+
+        /* 본문 섹션 */
+        .content-main { overflow: hidden; } /* 인포박스 옆으로 흐르게 설정 */
+        h2 { border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 40px; font-size: 1.6rem; clear: left; }
+        h3 { border-bottom: 1px solid #eee; padding-bottom: 3px; margin-top: 25px; font-size: 1.3rem; }
+        .strike-gray { text-decoration: line-through; color: #aaa; font-size: 0.95rem; }
+        .bold { font-weight: bold; }
+        
+        /* 선수 경력 차트 - 인포박스 너비를 고려한 가로폭 조절 */
+        .career-chart { 
+            width: calc(100% - 350px); 
+            min-width: 300px;
+            border: 2px solid #373a3c; 
+            margin: 20px 0; 
+            font-family: 'Malgun Gothic', sans-serif; 
+            text-align: center; 
+            background-color: white; 
+        }
+
+        .content-image-box { border: 1px solid #ccc; padding: 5px; background: #f9f9f9; display: inline-block; margin: 10px 0; text-align: center; }
+        .content-image-box img { max-width: 400px; display: block; border-bottom: 1px solid #ccc; margin-bottom: 5px; }
+        .image-caption { font-size: 0.85rem; color: #555; }
+        
+        .clearfix::after { content: ""; clear: both; display: table; }
+        @media (max-width: 800px) { 
+            .infobox { float: none; width: 100%; margin-left: 0; } 
+            .career-chart { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wiki-wrapper clearfix">
+    <div class="wiki-title">
+        <h1>스기모토 쇼타</h1>
+        <a class="edit-btn">[편집]</a>
+    </div>
+
+    <aside class="infobox">
+        <div class="infobox-name">스기모토 쇼타</div>
+        <div class="infobox-subname">그린 터틀즈 No.18</div>
+        <div class="infobox-image-wrap">
+            <img src="https://i.postimg.cc/fLpDwdkF/solo-blurry-background-portrait-upper-body-masterpiece-best-quality-absu-s-2887291468.png" alt="프로필" class="infobox-image">
+        </div>
+        <div class="infobox-content">
+            <table class="infobox-table">
+                <tr><th>본명</th><td>스기모토 쇼타 (杉本 翔太)</td></tr>
+                <tr><th>출생</th><td>2002년 5월 20일 (24세)<br>일본 나고야시</td></tr>
+                <tr><th>국적</th><td>🇯🇵 일본</td></tr>
+                <tr><th>학력</th><td>니혼대학</td></tr>
+                <tr><th>신체</th><td>182cm | 76kg</td></tr>
+                <tr><th>포지션</th><td>투수</td></tr>
+                <tr><th>투타</th><td>우투우타</td></tr>
+                <tr><th>소속팀</th><td>나고야 파이터즈(2023~2025)<br>그린 터틀즈 (2026~ )</td></tr>
+                <tr><th>등장곡</th><td><a href="https://youtu.be/o6wtDPVkKqI?si=XA0ANEKDFV5Dv0Oj" target="_blank" style="color: #0275d8; text-decoration: none;">타카하시 요코 - 残酷な天使의 테제</a></td></tr>
+            </table>
+        </div>
+    </aside>
+
+        <div class="toc">
+            <div class="toc-title">목차</div>
+            <ul>
+                <li><a href="#s-1">1. 개요</a></li>
+                <li><a href="#s-2">2. 선수 경력</a></li>
+                <li><a href="#s-3">3. 플레이 스타일</a></li>
+                <li><a href="#s-4">4. 별명</a></li>
+                <li><a href="#s-5">5. 여담</a></li>
+            </ul>
+        </div>
+    <div class="content-main">
+        <h2 id="s-1" style="margin-top: 0;">1. 개요</h2>
+        <p><span class="bold">그린 터틀즈 소속의 우완 투수.</span></p>
+
+        <h2 id="s-2">2. 선수 경력</h2>
+        <div class="career-chart">
+            <div style="background-color: #000; color: #fff; padding: 8px; font-weight: bold; font-size: 1.1rem;">스기모토 쇼타의 선수 경력</div>
+            <div style="background-color: #f9f9f9; border-bottom: 1px solid #ccc; padding: 5px; font-size: 0.9rem;">통합 선수 경력: <span style="color: #0275d8;">스기모토 쇼타/선수 경력</span></div>
+            <div style="display: flex; border-bottom: 1px solid #ccc;">
+                <div style="flex: 1; background-color: #2da44e; color: #fff; padding: 10px; font-weight: bold; border-right: 1px solid #fff;">2023년</div>
+                <div style="flex: 1; background-color: #2da44e; color: #fff; padding: 10px; font-weight: bold; border-right: 1px solid #fff;">2024년</div>
+                <div style="flex: 1; background-color: #2da44e; color: #fff; padding: 10px; font-weight: bold;">2025년</div>
+            </div>
+            <div style="background-color: #002d56; color: #fff; padding: 8px; font-weight: bold; font-style: italic; letter-spacing: 1px;">KBO LEAGUE</div>
+            <div style="background-color: #000; color: #fff; padding: 8px; font-weight: bold; border-top: 1px solid #373a3c;">아마추어 시절</div>
+        </div>
+
+        <h2 id="s-3">3. 플레이 스타일</h2>
+        <div class="content-image-box">
+            <img src="https://i.postimg.cc/3RcJd6fV/solo-blurry-background-full-body-on-baseball-ground-throwing-ball-motion-bl-s-357445543.png" alt="투구 폼">
+            <div class="image-caption">마운드 위에서 투구 준비를 하는 스기모토 쇼타</div>
+        </div>
+        <p>평균 구속 <span class="bold">145km/h</span>, 최고 <span class="bold">155km/h</span>의 포심 패스트볼과 커브볼, 스플리터를 구사하는 우완 정통파 투수. 구종에 관계없는 정교한 <span class="bold">제구력</span>이 최대 강점이며, 야구선수치고는 가녀린 몸에서 나오는 파워도 준수해 일본 리그에서도 손에 꼽히는 투수로 언급된 바 있다.</p>
+        <p>특히 결정구로 사용하는 스플리터는 낙폭이 커서 타자들의 헛스윙을 유도하는 데 최적화되어 있다는 평가.</p>
+
+<h2 id="s-4">4. 별명</h2>
+        <p>올해 아시아쿼터로 도입되어 온 선수이기 때문에 아직 많은 정보가 없어, 주로 이름에 관한 별명이 많다.</p>
+        <ul>
+            <li><b>스시</b>: 말 그대로 일본인이라서 붙은 별명. 여담으로 '<b>스</b>'기모토 '<b>쇼</b>'타를 줄여서 초성으로 부르면 <span class="strike-gray">섹스</span>라고 할 수 없기에(...) 스시라고 변형되어 불리게 되었다. <span class="strike-gray">그거나 그거나.</span></li>
+            <li><b>다이스기</b>: 성인 스기모토(Sugimoto)를 본따 '다이스키(大好き, 아주 좋아해)'와 합성한 별명.</li>
+            <li><b>쇼타</b>: <span class="strike-gray">이름 그대로지만</span> 외모가 예쁘게 생겨서 팬들이 더 자주 부른다고 한다.</li>
+        </ul>
+
+        <h2 id="s-5">5. 여담</h2>
+        <ul>
+            <li>MBTI는 <span class="bold">ISFP</span>이다.</li>
+            <li>늘 조용하고 방긋방긋 웃고 다녀서 구단 관계자들로부터 평이 매우 좋다. 다만 어째서인지 <span class="bold">일본어를 할 줄 아는 선수들은 스기모토를 조금 꺼리는 기색</span>을 보인다고 한다.<span class="strike-gray">(말이 험한가?)</span></li>
+            <li>한국에 온 지 얼마 되지 않아 한국어가 어눌하며, 일본어와 한국어를 섞어서 동료들과 소통한다.</li>
+            <li>한국 문화와 연예인을 꽤 좋아한다. 최애 연예인은 걸그룹 <span class="bold">아이즈투(IZ*TWO)의 장삼삼</span>이라고 한다.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
